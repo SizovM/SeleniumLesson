@@ -1,0 +1,20 @@
+plugins {
+    id 'java'
+}
+
+group 'net.absoft.automation'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.testng:testng:7.6.0'
+    implementation 'org.seleniumhq.selenium:selenium-java:4.3.0'
+    implementation 'io.github.bonigarcia:webdrivermanager:5.2.1'
+}
+
+test {
+    useTestNG()
+}
